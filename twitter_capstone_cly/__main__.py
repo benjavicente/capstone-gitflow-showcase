@@ -2,7 +2,7 @@ from pathlib import Path
 
 import typer
 
-from .common import load_data_to_db
+from .load import load_data_to_db
 
 DEFAULT_JSON_PATH = Path("farmers-protest-tweets-2021-03-5.json")
 
