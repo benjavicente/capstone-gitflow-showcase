@@ -3,7 +3,7 @@ from pathlib import Path
 import typer
 from rich import print
 
-from .func import top_retweeted
+from .func import top_retweeted, top_users_by_tweets
 from .load import load_data_to_db
 
 DEFAULT_JSON_PATH = Path("farmers-protest-tweets-2021-03-5.json")
@@ -19,7 +19,7 @@ def load(json_path: Path = DEFAULT_JSON_PATH, db_path: Path = Path("data.db")):
 
 @top_app.command()
 def users():
-    print("users")
+    print(top_users_by_tweets())
 
 @top_app.command()
 def tweets():
