@@ -1,2 +1,5 @@
 .venv
-.py[co]
+*.py[co]
+*.json
+*.db
+*.db-journal
